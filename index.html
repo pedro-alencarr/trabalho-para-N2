@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>trabalho math</title>
+</head>
+<body class="screen">
+    <header class="header">
+        <h1>Calculadora</h1>
+    </header>
+    <main class="main">
+        <section class="main-sect">
+            <div class="container">
+                <span class="text-label">digite o que deseja:</span>
+                <select name="select-opt" id="select-opt">
+                    <option value="">Selecione</option>
+                    <option value="PXI">Par ou Impar</option>
+                    <option value="PXC">Primo ou Composto</option>
+                    <option value="MOD">Módulo</option>
+                    <option value="FAT">Fatorar</option>
+                    <option value="MMC">MMC</option>
+                    <option value="MDC">MDC</option>
+                </select>
+
+                <section class="disabled" id="sect-PXI">
+                    <span class="text-label2">digite o número que deseja saber se é par ou impar</span>
+                    <div>
+                        <label for="inp-PXI" class="text-label2">Número:</label>
+                        <input id="inp-PXI" type="number">
+                    </div>
+                    <button id="btn-PXI">Gerar</button>
+                </section>
+
+                <section class="disabled" id="sect-PXC">
+                    <span class="text-label2">digite o número que deseja saber se é primo ou composto</span>
+                    <div>
+                        <label for="inp-PXC" class="text-label2">Número:</label>
+                        <input id="inp-PXC" type="number">
+                    </div>
+                    <button id="btn-PXC">Gerar</button>
+                </section>
+                
+                <section class="disabled" id="sect-FAT">
+                    <span class="text-label2">digite o número que deseja fatorar</span>
+                    <div>
+                        <label for="inp-FAT" class="text-label2">Número:</label>
+                        <input id="inp-FAT" type="number">
+                    </div>
+                    <button id="btn-FAT">Gerar</button>
+                </section>
+                
+                <section class="disabled" id="sect-MOD">
+                    <span class="text-label2"> digite os números para descobrir o módulo</span>
+                    <div>
+                        <label for="inp-MOD" class="text-label2">Número:</label>
+                        <input id="inp-MOD" type="number">
+                    </div>
+                    <div>
+                        <label for="inp-MOD2" class="text-label2">Número 2:</label>
+                        <input id="inp-MOD2" type="number">
+                    </div>
+                    <button id="btn-MOD">Gerar</button>
+                </section>
+
+                <section class="disabled" id="sect-MMC">
+                    <span class="text-label2">digite os números realizar o MMC</span>
+                    <div>
+                        <label for="inp-MMC" class="text-label2">Número:</label>
+                        <input id="inp-MMC" type="number">
+                    </div>
+                    <div>
+                        <label for="inp-MMC2" class="text-label2">Número 2:</label>
+                        <input id="inp-MMC2" type="number">
+                    </div>
+                    <button id="btn-MMC">Gerar</button>
+                </section>
+
+                <section class="disabled" id="sect-MDC">
+                    <span class="text-label2">digite os números para realizar o MDC</span>
+                    <div>
+                        <label for="inp-MDC" class="text-label2">Número:</label>
+                        <input id="inp-MDC" type="number">
+                    </div>
+                    <div>
+                        <label for="inp-MDC2" class="text-label2">Número 2:</label>
+                        <input id="inp-MDC2" type="number">
+                    </div>
+                    <button id="btn-MDC">Gerar</button>
+                </section>
+
+
+                <textarea class="disabled" name="result-camp" id="result-camp" rows="5"></textarea>
+            </div>
+        </section>
+        <footer class="footer">
+            <span>Pedro Henrique</span>
+        </footer>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
